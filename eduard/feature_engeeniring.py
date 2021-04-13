@@ -40,9 +40,9 @@ class TranformTimeSeries(BaseEstimator, TransformerMixin):
         df_box = resulting.copy()
 
         for column in columns_lmbds:
-            print(f'column:\t{column}')
+            print(f'boxcox column:\t{column}')
             data_box_cox, lmbd = boxcox(df_box[column])
-            df_box[column] = np.power(df_box[column], lmbd)
+            df_box[column] = data_box_cox # np.power(df_box[column], lmbd) # data_box_cox
             lmbds.append(lmbd)
 
         self.lmbds = dict((col, lmbd) for col, lmbd in zip(columns_lmbds, lmbds))
@@ -59,7 +59,7 @@ class TranformTimeSeries(BaseEstimator, TransformerMixin):
         for column, lmbd in self.lmbds.items():
             #             print(f'column:\t{column}')
             data_box_cox = boxcox(df_box[column], lmbda=lmbd)
-            df_box[column] = np.power(df_box[column], lmbd)
+            df_box[column] = data_box_cox# np.power(df_box[column], lmbd)
 
         return df_box
 
