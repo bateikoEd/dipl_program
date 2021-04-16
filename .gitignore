@@ -1,5 +1,7 @@
 #directory 
 models/
+eduard/artifacts
+eduard/mlruns
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

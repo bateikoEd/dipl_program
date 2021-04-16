@@ -31,8 +31,8 @@ def define_metrics(y, predicted_train, predicted_test, name):
 
     metric_train = pd.DataFrame()
     metric_train['name'] = [name + '_train']
-    metric_train['r2'] = [r2_score(y_train, pred_train_)]
-    metric_train['sum_squared_resid'] = np.sum((y_train - pred_train_) ** 2)
+    metric_train['R2'] = [r2_score(y_train, pred_train_)]
+    metric_train['RSS'] = np.sum((y_train - pred_train_) ** 2)
     metric_train['MAPE'] = [np.mean(np.abs((y_train - pred_train_) / y_train)) * 100]
     metric_train['RMSE'] = [np.sqrt(np.mean((y_train - pred_train_) ** 2))]
     metric_train['durbin_watson'] = [durbin_watson(y_train - pred_train_)]
@@ -44,8 +44,8 @@ def define_metrics(y, predicted_train, predicted_test, name):
 
     metric_test = pd.DataFrame()
     metric_test['name'] = [name + '_test']
-    metric_test['r2'] = [r2_score(y_test, pred_test_)]
-    metric_test['sum_squared_resid'] = np.sum((y_test - pred_test_) ** 2)
+    metric_test['R2'] = [r2_score(y_test, pred_test_)]
+    metric_test['RSS'] = np.sum((y_test - pred_test_) ** 2)
 
     metric_test['MAPE'] = [np.mean(np.abs((y_test - pred_test_) / y_test)) * 100]
 

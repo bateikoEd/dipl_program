@@ -79,7 +79,7 @@ class Lags(BaseEstimator, TransformerMixin):
 
         # creates lags for all features
         for i in range(1, self.lags + 1):
-            col_my_new = list(x + '-1' for x in self.columns)
+            col_my_new = list(x + f'-{i}' for x in self.columns)
             transformed[col_my_new] = X_copy[self.columns].shift(i)
 
         result = pd.concat([X_copy, transformed], axis=1)
