@@ -58,9 +58,11 @@ def define_metrics(y, predicted_train, predicted_test, name):
     metric_test['ex_var'] = [explained_variance_score(y_test, pred_test_)]
 
     return metric_train.append(metric_test)
-def tsplot(y, lags=None, figsize=(15, 13), style='bmh', title=''):
+def tsplot(y, lags=None, figsize=(15, 13), style='bmh', title='', path=None):
     if not isinstance(y, pd.Series):
         y = pd.Series(y)
+
+    path_im = None
     with plt.style.context(style):
         fig = plt.figure(figsize=figsize)
         # mpl.rcParams['font.family'] = 'Ubuntu Mono'
@@ -80,10 +82,16 @@ def tsplot(y, lags=None, figsize=(15, 13), style='bmh', title=''):
         scs.probplot(y, sparams=(y.mean(), y.std()), plot=pp_ax)
 
         plt.tight_layout()
-    return
+
+        if path is not None:
+            path_im = f'{path}.png'
+            plt.savefig(path_im)
+
+    plt.close()
+    return path_im
 
 
-def show_pred(y_train, y_test, y, title):
+def show_pred(y_train, y_test, y, title, directory=None, file_name=None):
     #     y_train_copy = pd.Series(y_train, index=y.index[:len(y_train)])
     #     y_test_copy = pd.Series(y_test, index=y.index[-len(y_test):])
     y_test_copy = pd.Series(y_test)
@@ -98,8 +106,17 @@ def show_pred(y_train, y_test, y, title):
     plt.plot(y, label='y_real')
     plt.title(title)
     plt.legend()
+
+    if directory is not None:
+
+        path_im = f'{directory}/{file_name}.png'
+        file_name_im = f'{file_name}.png'
+        plt.savefig(path_im)
+
+
     plt.show()
 
+    return path_im, file_name_im
 
 def get_prediction_error_from_pipeline_autoMl(pipeline, X_train, X_test, y_train, y_test):
     prediction_test = pipeline.predict(X_test).to_series()
@@ -113,19 +130,57 @@ def get_prediction_error_from_pipeline_autoMl(pipeline, X_train, X_test, y_train
 
     return prediction_train, prediction_test, error_train, error_test
 
-def show_train_test_residual(error_train, error_test):
-    plt.subplot(221)
-    error_train.plot(kind='kde', figsize=(15, 15), label='residual_train')
-    plt.title('residual_train')
+def show_train_test_residual(error_train, error_test, directory=None, file_name=None):
+    if file_name is not None:
+        print(file_name)
 
-    plt.subplot(222)
-    error_test.plot(kind='kde', figsize=(15, 15), label='residual_test')
-    plt.title('residual_test')
-    plt.show()
+    fig = plt.figure()
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax1 = error_train.plot(kind='kde', figsize=(15, 15), label='residual_train')
 
-    tsplot(error_train, title='Residual train')
-    tsplot(error_test, title='Residual test')
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax2 = error_test.plot(kind='kde', figsize=(15, 15), label='residual_test')
 
+    # Save the full figure...
+    # fig.savefig('full_figure.png')
+
+    if directory is not None:
+        path_pdf = f'{directory}/pdf_{file_name}.png'
+        plt.savefig(path_pdf)
+        plt.close()
+
+    # plt.subplot(221)
+    # error_train.plot(kind='kde', figsize=(15, 15), label='residual_train')
+    # plt.title('residual_train')
+    #
+    # plt.subplot(222)
+    # error_test.plot(kind='kde', figsize=(15, 15), label='residual_test')
+    # plt.title('residual_test')
+    #
+    # if directory is not None:
+    #     path_pdf = f'{directory}/pdf_{file_name}.png'
+    #     plt.savefig(path_pdf)
+
+    fig.show()
+
+    file_names = None
+    pathes = None
+
+    if directory is not None:
+
+        file_name_train = f'res_train_{file_name}'
+        file_name_test = f'res_test_{file_name}'
+        file_names = [f'pdf_{file_name}', file_name_train, file_name_test]
+
+        path_train = tsplot(error_train, title=f'Residual train {file_name}', path=f'{directory}/{file_name_train}')
+        path_test = tsplot(error_test, title=f'Residual test {file_name}', path=f'{directory}/{file_name_test}')
+
+        pathes = [path_pdf, path_train, path_test]
+    else:
+        tsplot(error_train, title='Residual train')
+        tsplot(error_test, title='Residual test')
+
+    return file_names, pathes
 
 def inv_boxcox_prediction_and_realvalues(y, prediction_train, prediction_test, lmbd):
     inv_pred_train = inv_boxcox(prediction_train, lmbd)
