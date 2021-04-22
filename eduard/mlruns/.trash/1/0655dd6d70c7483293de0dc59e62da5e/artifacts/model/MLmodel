@@ -1,0 +1,409 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.7.7
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.23.1
+run_id: 0655dd6d70c7483293de0dc59e62da5e
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  type: dataframe
+signature:
+  inputs: '[{"name": "bitcoin", "type": "double"}, {"name": "bitcoin price", "type":
+    "double"}, {"name": "bitcoin usd", "type": "double"}, {"name": "bitcoin kurs",
+    "type": "double"}, {"name": "Bitcoin.com", "type": "double"}, {"name": "Bitcoin
+    Gold", "type": "double"}, {"name": "BTC-USD", "type": "double"}, {"name": "Bitcoin
+    Cash", "type": "double"}, {"name": "binance", "type": "double"}, {"name": "cryptocurrency",
+    "type": "double"}, {"name": "cryptocurrency bitcoin", "type": "double"}, {"name":
+    "news cryptocurrency", "type": "double"}, {"name": "crypto", "type": "double"},
+    {"name": "buy bitcoin", "type": "double"}, {"name": "bitcoin stock", "type": "double"},
+    {"name": "best cryptocurrency", "type": "double"}, {"name": "cryptocurrency market",
+    "type": "double"}, {"name": "buy cryptocurrency", "type": "double"}, {"name":
+    "what is cryptocurrency", "type": "double"}, {"name": "cryptocurrency exchange",
+    "type": "double"}, {"name": "Close-1", "type": "double"}, {"name": "bitcoin-1",
+    "type": "double"}, {"name": "bitcoin price-1", "type": "double"}, {"name": "bitcoin
+    usd-1", "type": "double"}, {"name": "bitcoin kurs-1", "type": "double"}, {"name":
+    "Bitcoin.com-1", "type": "double"}, {"name": "Bitcoin Gold-1", "type": "double"},
+    {"name": "BTC-USD-1", "type": "double"}, {"name": "Bitcoin Cash-1", "type": "double"},
+    {"name": "binance-1", "type": "double"}, {"name": "cryptocurrency-1", "type":
+    "double"}, {"name": "cryptocurrency bitcoin-1", "type": "double"}, {"name": "news
+    cryptocurrency-1", "type": "double"}, {"name": "crypto-1", "type": "double"},
+    {"name": "buy bitcoin-1", "type": "double"}, {"name": "bitcoin stock-1", "type":
+    "double"}, {"name": "best cryptocurrency-1", "type": "double"}, {"name": "cryptocurrency
+    market-1", "type": "double"}, {"name": "buy cryptocurrency-1", "type": "double"},
+    {"name": "what is cryptocurrency-1", "type": "double"}, {"name": "cryptocurrency
+    exchange-1", "type": "double"}, {"name": "Close-2", "type": "double"}, {"name":
+    "bitcoin-2", "type": "double"}, {"name": "bitcoin price-2", "type": "double"},
+    {"name": "bitcoin usd-2", "type": "double"}, {"name": "bitcoin kurs-2", "type":
+    "double"}, {"name": "Bitcoin.com-2", "type": "double"}, {"name": "Bitcoin Gold-2",
+    "type": "double"}, {"name": "BTC-USD-2", "type": "double"}, {"name": "Bitcoin
+    Cash-2", "type": "double"}, {"name": "binance-2", "type": "double"}, {"name":
+    "cryptocurrency-2", "type": "double"}, {"name": "cryptocurrency bitcoin-2", "type":
+    "double"}, {"name": "news cryptocurrency-2", "type": "double"}, {"name": "crypto-2",
+    "type": "double"}, {"name": "buy bitcoin-2", "type": "double"}, {"name": "bitcoin
+    stock-2", "type": "double"}, {"name": "best cryptocurrency-2", "type": "double"},
+    {"name": "cryptocurrency market-2", "type": "double"}, {"name": "buy cryptocurrency-2",
+    "type": "double"}, {"name": "what is cryptocurrency-2", "type": "double"}, {"name":
+    "cryptocurrency exchange-2", "type": "double"}, {"name": "Close-3", "type": "double"},
+    {"name": "bitcoin-3", "type": "double"}, {"name": "bitcoin price-3", "type": "double"},
+    {"name": "bitcoin usd-3", "type": "double"}, {"name": "bitcoin kurs-3", "type":
+    "double"}, {"name": "Bitcoin.com-3", "type": "double"}, {"name": "Bitcoin Gold-3",
+    "type": "double"}, {"name": "BTC-USD-3", "type": "double"}, {"name": "Bitcoin
+    Cash-3", "type": "double"}, {"name": "binance-3", "type": "double"}, {"name":
+    "cryptocurrency-3", "type": "double"}, {"name": "cryptocurrency bitcoin-3", "type":
+    "double"}, {"name": "news cryptocurrency-3", "type": "double"}, {"name": "crypto-3",
+    "type": "double"}, {"name": "buy bitcoin-3", "type": "double"}, {"name": "bitcoin
+    stock-3", "type": "double"}, {"name": "best cryptocurrency-3", "type": "double"},
+    {"name": "cryptocurrency market-3", "type": "double"}, {"name": "buy cryptocurrency-3",
+    "type": "double"}, {"name": "what is cryptocurrency-3", "type": "double"}, {"name":
+    "cryptocurrency exchange-3", "type": "double"}, {"name": "Close-4", "type": "double"},
+    {"name": "bitcoin-4", "type": "double"}, {"name": "bitcoin price-4", "type": "double"},
+    {"name": "bitcoin usd-4", "type": "double"}, {"name": "bitcoin kurs-4", "type":
+    "double"}, {"name": "Bitcoin.com-4", "type": "double"}, {"name": "Bitcoin Gold-4",
+    "type": "double"}, {"name": "BTC-USD-4", "type": "double"}, {"name": "Bitcoin
+    Cash-4", "type": "double"}, {"name": "binance-4", "type": "double"}, {"name":
+    "cryptocurrency-4", "type": "double"}, {"name": "cryptocurrency bitcoin-4", "type":
+    "double"}, {"name": "news cryptocurrency-4", "type": "double"}, {"name": "crypto-4",
+    "type": "double"}, {"name": "buy bitcoin-4", "type": "double"}, {"name": "bitcoin
+    stock-4", "type": "double"}, {"name": "best cryptocurrency-4", "type": "double"},
+    {"name": "cryptocurrency market-4", "type": "double"}, {"name": "buy cryptocurrency-4",
+    "type": "double"}, {"name": "what is cryptocurrency-4", "type": "double"}, {"name":
+    "cryptocurrency exchange-4", "type": "double"}, {"name": "Close_av_mean_2", "type":
+    "double"}, {"name": "bitcoin_av_mean_2", "type": "double"}, {"name": "bitcoin
+    price_av_mean_2", "type": "double"}, {"name": "bitcoin usd_av_mean_2", "type":
+    "double"}, {"name": "bitcoin kurs_av_mean_2", "type": "double"}, {"name": "Bitcoin.com_av_mean_2",
+    "type": "double"}, {"name": "Bitcoin Gold_av_mean_2", "type": "double"}, {"name":
+    "BTC-USD_av_mean_2", "type": "double"}, {"name": "Bitcoin Cash_av_mean_2", "type":
+    "double"}, {"name": "binance_av_mean_2", "type": "double"}, {"name": "cryptocurrency_av_mean_2",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_av_mean_2", "type": "double"},
+    {"name": "news cryptocurrency_av_mean_2", "type": "double"}, {"name": "crypto_av_mean_2",
+    "type": "double"}, {"name": "buy bitcoin_av_mean_2", "type": "double"}, {"name":
+    "bitcoin stock_av_mean_2", "type": "double"}, {"name": "best cryptocurrency_av_mean_2",
+    "type": "double"}, {"name": "cryptocurrency market_av_mean_2", "type": "double"},
+    {"name": "buy cryptocurrency_av_mean_2", "type": "double"}, {"name": "what is
+    cryptocurrency_av_mean_2", "type": "double"}, {"name": "cryptocurrency exchange_av_mean_2",
+    "type": "double"}, {"name": "Close_av_mean_3", "type": "double"}, {"name": "bitcoin_av_mean_3",
+    "type": "double"}, {"name": "bitcoin price_av_mean_3", "type": "double"}, {"name":
+    "bitcoin usd_av_mean_3", "type": "double"}, {"name": "bitcoin kurs_av_mean_3",
+    "type": "double"}, {"name": "Bitcoin.com_av_mean_3", "type": "double"}, {"name":
+    "Bitcoin Gold_av_mean_3", "type": "double"}, {"name": "BTC-USD_av_mean_3", "type":
+    "double"}, {"name": "Bitcoin Cash_av_mean_3", "type": "double"}, {"name": "binance_av_mean_3",
+    "type": "double"}, {"name": "cryptocurrency_av_mean_3", "type": "double"}, {"name":
+    "cryptocurrency bitcoin_av_mean_3", "type": "double"}, {"name": "news cryptocurrency_av_mean_3",
+    "type": "double"}, {"name": "crypto_av_mean_3", "type": "double"}, {"name": "buy
+    bitcoin_av_mean_3", "type": "double"}, {"name": "bitcoin stock_av_mean_3", "type":
+    "double"}, {"name": "best cryptocurrency_av_mean_3", "type": "double"}, {"name":
+    "cryptocurrency market_av_mean_3", "type": "double"}, {"name": "buy cryptocurrency_av_mean_3",
+    "type": "double"}, {"name": "what is cryptocurrency_av_mean_3", "type": "double"},
+    {"name": "cryptocurrency exchange_av_mean_3", "type": "double"}, {"name": "Close_av_mean_4",
+    "type": "double"}, {"name": "bitcoin_av_mean_4", "type": "double"}, {"name": "bitcoin
+    price_av_mean_4", "type": "double"}, {"name": "bitcoin usd_av_mean_4", "type":
+    "double"}, {"name": "bitcoin kurs_av_mean_4", "type": "double"}, {"name": "Bitcoin.com_av_mean_4",
+    "type": "double"}, {"name": "Bitcoin Gold_av_mean_4", "type": "double"}, {"name":
+    "BTC-USD_av_mean_4", "type": "double"}, {"name": "Bitcoin Cash_av_mean_4", "type":
+    "double"}, {"name": "binance_av_mean_4", "type": "double"}, {"name": "cryptocurrency_av_mean_4",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_av_mean_4", "type": "double"},
+    {"name": "news cryptocurrency_av_mean_4", "type": "double"}, {"name": "crypto_av_mean_4",
+    "type": "double"}, {"name": "buy bitcoin_av_mean_4", "type": "double"}, {"name":
+    "bitcoin stock_av_mean_4", "type": "double"}, {"name": "best cryptocurrency_av_mean_4",
+    "type": "double"}, {"name": "cryptocurrency market_av_mean_4", "type": "double"},
+    {"name": "buy cryptocurrency_av_mean_4", "type": "double"}, {"name": "what is
+    cryptocurrency_av_mean_4", "type": "double"}, {"name": "cryptocurrency exchange_av_mean_4",
+    "type": "double"}, {"name": "Close_av_mean_5", "type": "double"}, {"name": "bitcoin_av_mean_5",
+    "type": "double"}, {"name": "bitcoin price_av_mean_5", "type": "double"}, {"name":
+    "bitcoin usd_av_mean_5", "type": "double"}, {"name": "bitcoin kurs_av_mean_5",
+    "type": "double"}, {"name": "Bitcoin.com_av_mean_5", "type": "double"}, {"name":
+    "Bitcoin Gold_av_mean_5", "type": "double"}, {"name": "BTC-USD_av_mean_5", "type":
+    "double"}, {"name": "Bitcoin Cash_av_mean_5", "type": "double"}, {"name": "binance_av_mean_5",
+    "type": "double"}, {"name": "cryptocurrency_av_mean_5", "type": "double"}, {"name":
+    "cryptocurrency bitcoin_av_mean_5", "type": "double"}, {"name": "news cryptocurrency_av_mean_5",
+    "type": "double"}, {"name": "crypto_av_mean_5", "type": "double"}, {"name": "buy
+    bitcoin_av_mean_5", "type": "double"}, {"name": "bitcoin stock_av_mean_5", "type":
+    "double"}, {"name": "best cryptocurrency_av_mean_5", "type": "double"}, {"name":
+    "cryptocurrency market_av_mean_5", "type": "double"}, {"name": "buy cryptocurrency_av_mean_5",
+    "type": "double"}, {"name": "what is cryptocurrency_av_mean_5", "type": "double"},
+    {"name": "cryptocurrency exchange_av_mean_5", "type": "double"}, {"name": "Close_av_mean_6",
+    "type": "double"}, {"name": "bitcoin_av_mean_6", "type": "double"}, {"name": "bitcoin
+    price_av_mean_6", "type": "double"}, {"name": "bitcoin usd_av_mean_6", "type":
+    "double"}, {"name": "bitcoin kurs_av_mean_6", "type": "double"}, {"name": "Bitcoin.com_av_mean_6",
+    "type": "double"}, {"name": "Bitcoin Gold_av_mean_6", "type": "double"}, {"name":
+    "BTC-USD_av_mean_6", "type": "double"}, {"name": "Bitcoin Cash_av_mean_6", "type":
+    "double"}, {"name": "binance_av_mean_6", "type": "double"}, {"name": "cryptocurrency_av_mean_6",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_av_mean_6", "type": "double"},
+    {"name": "news cryptocurrency_av_mean_6", "type": "double"}, {"name": "crypto_av_mean_6",
+    "type": "double"}, {"name": "buy bitcoin_av_mean_6", "type": "double"}, {"name":
+    "bitcoin stock_av_mean_6", "type": "double"}, {"name": "best cryptocurrency_av_mean_6",
+    "type": "double"}, {"name": "cryptocurrency market_av_mean_6", "type": "double"},
+    {"name": "buy cryptocurrency_av_mean_6", "type": "double"}, {"name": "what is
+    cryptocurrency_av_mean_6", "type": "double"}, {"name": "cryptocurrency exchange_av_mean_6",
+    "type": "double"}, {"name": "Close_av_mean_7", "type": "double"}, {"name": "bitcoin_av_mean_7",
+    "type": "double"}, {"name": "bitcoin price_av_mean_7", "type": "double"}, {"name":
+    "bitcoin usd_av_mean_7", "type": "double"}, {"name": "bitcoin kurs_av_mean_7",
+    "type": "double"}, {"name": "Bitcoin.com_av_mean_7", "type": "double"}, {"name":
+    "Bitcoin Gold_av_mean_7", "type": "double"}, {"name": "BTC-USD_av_mean_7", "type":
+    "double"}, {"name": "Bitcoin Cash_av_mean_7", "type": "double"}, {"name": "binance_av_mean_7",
+    "type": "double"}, {"name": "cryptocurrency_av_mean_7", "type": "double"}, {"name":
+    "cryptocurrency bitcoin_av_mean_7", "type": "double"}, {"name": "news cryptocurrency_av_mean_7",
+    "type": "double"}, {"name": "crypto_av_mean_7", "type": "double"}, {"name": "buy
+    bitcoin_av_mean_7", "type": "double"}, {"name": "bitcoin stock_av_mean_7", "type":
+    "double"}, {"name": "best cryptocurrency_av_mean_7", "type": "double"}, {"name":
+    "cryptocurrency market_av_mean_7", "type": "double"}, {"name": "buy cryptocurrency_av_mean_7",
+    "type": "double"}, {"name": "what is cryptocurrency_av_mean_7", "type": "double"},
+    {"name": "cryptocurrency exchange_av_mean_7", "type": "double"}, {"name": "Close_av_std_2",
+    "type": "double"}, {"name": "bitcoin_av_std_2", "type": "double"}, {"name": "bitcoin
+    price_av_std_2", "type": "double"}, {"name": "bitcoin usd_av_std_2", "type": "double"},
+    {"name": "bitcoin kurs_av_std_2", "type": "double"}, {"name": "Bitcoin.com_av_std_2",
+    "type": "double"}, {"name": "Bitcoin Gold_av_std_2", "type": "double"}, {"name":
+    "BTC-USD_av_std_2", "type": "double"}, {"name": "Bitcoin Cash_av_std_2", "type":
+    "double"}, {"name": "binance_av_std_2", "type": "double"}, {"name": "cryptocurrency_av_std_2",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_av_std_2", "type": "double"},
+    {"name": "news cryptocurrency_av_std_2", "type": "double"}, {"name": "crypto_av_std_2",
+    "type": "double"}, {"name": "buy bitcoin_av_std_2", "type": "double"}, {"name":
+    "bitcoin stock_av_std_2", "type": "double"}, {"name": "best cryptocurrency_av_std_2",
+    "type": "double"}, {"name": "cryptocurrency market_av_std_2", "type": "double"},
+    {"name": "buy cryptocurrency_av_std_2", "type": "double"}, {"name": "what is cryptocurrency_av_std_2",
+    "type": "double"}, {"name": "cryptocurrency exchange_av_std_2", "type": "double"},
+    {"name": "Close_av_std_3", "type": "double"}, {"name": "bitcoin_av_std_3", "type":
+    "double"}, {"name": "bitcoin price_av_std_3", "type": "double"}, {"name": "bitcoin
+    usd_av_std_3", "type": "double"}, {"name": "bitcoin kurs_av_std_3", "type": "double"},
+    {"name": "Bitcoin.com_av_std_3", "type": "double"}, {"name": "Bitcoin Gold_av_std_3",
+    "type": "double"}, {"name": "BTC-USD_av_std_3", "type": "double"}, {"name": "Bitcoin
+    Cash_av_std_3", "type": "double"}, {"name": "binance_av_std_3", "type": "double"},
+    {"name": "cryptocurrency_av_std_3", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_av_std_3", "type": "double"}, {"name": "news cryptocurrency_av_std_3",
+    "type": "double"}, {"name": "crypto_av_std_3", "type": "double"}, {"name": "buy
+    bitcoin_av_std_3", "type": "double"}, {"name": "bitcoin stock_av_std_3", "type":
+    "double"}, {"name": "best cryptocurrency_av_std_3", "type": "double"}, {"name":
+    "cryptocurrency market_av_std_3", "type": "double"}, {"name": "buy cryptocurrency_av_std_3",
+    "type": "double"}, {"name": "what is cryptocurrency_av_std_3", "type": "double"},
+    {"name": "cryptocurrency exchange_av_std_3", "type": "double"}, {"name": "Close_av_std_4",
+    "type": "double"}, {"name": "bitcoin_av_std_4", "type": "double"}, {"name": "bitcoin
+    price_av_std_4", "type": "double"}, {"name": "bitcoin usd_av_std_4", "type": "double"},
+    {"name": "bitcoin kurs_av_std_4", "type": "double"}, {"name": "Bitcoin.com_av_std_4",
+    "type": "double"}, {"name": "Bitcoin Gold_av_std_4", "type": "double"}, {"name":
+    "BTC-USD_av_std_4", "type": "double"}, {"name": "Bitcoin Cash_av_std_4", "type":
+    "double"}, {"name": "binance_av_std_4", "type": "double"}, {"name": "cryptocurrency_av_std_4",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_av_std_4", "type": "double"},
+    {"name": "news cryptocurrency_av_std_4", "type": "double"}, {"name": "crypto_av_std_4",
+    "type": "double"}, {"name": "buy bitcoin_av_std_4", "type": "double"}, {"name":
+    "bitcoin stock_av_std_4", "type": "double"}, {"name": "best cryptocurrency_av_std_4",
+    "type": "double"}, {"name": "cryptocurrency market_av_std_4", "type": "double"},
+    {"name": "buy cryptocurrency_av_std_4", "type": "double"}, {"name": "what is cryptocurrency_av_std_4",
+    "type": "double"}, {"name": "cryptocurrency exchange_av_std_4", "type": "double"},
+    {"name": "Close_av_std_5", "type": "double"}, {"name": "bitcoin_av_std_5", "type":
+    "double"}, {"name": "bitcoin price_av_std_5", "type": "double"}, {"name": "bitcoin
+    usd_av_std_5", "type": "double"}, {"name": "bitcoin kurs_av_std_5", "type": "double"},
+    {"name": "Bitcoin.com_av_std_5", "type": "double"}, {"name": "Bitcoin Gold_av_std_5",
+    "type": "double"}, {"name": "BTC-USD_av_std_5", "type": "double"}, {"name": "Bitcoin
+    Cash_av_std_5", "type": "double"}, {"name": "binance_av_std_5", "type": "double"},
+    {"name": "cryptocurrency_av_std_5", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_av_std_5", "type": "double"}, {"name": "news cryptocurrency_av_std_5",
+    "type": "double"}, {"name": "crypto_av_std_5", "type": "double"}, {"name": "buy
+    bitcoin_av_std_5", "type": "double"}, {"name": "bitcoin stock_av_std_5", "type":
+    "double"}, {"name": "best cryptocurrency_av_std_5", "type": "double"}, {"name":
+    "cryptocurrency market_av_std_5", "type": "double"}, {"name": "buy cryptocurrency_av_std_5",
+    "type": "double"}, {"name": "what is cryptocurrency_av_std_5", "type": "double"},
+    {"name": "cryptocurrency exchange_av_std_5", "type": "double"}, {"name": "Close_av_std_6",
+    "type": "double"}, {"name": "bitcoin_av_std_6", "type": "double"}, {"name": "bitcoin
+    price_av_std_6", "type": "double"}, {"name": "bitcoin usd_av_std_6", "type": "double"},
+    {"name": "bitcoin kurs_av_std_6", "type": "double"}, {"name": "Bitcoin.com_av_std_6",
+    "type": "double"}, {"name": "Bitcoin Gold_av_std_6", "type": "double"}, {"name":
+    "BTC-USD_av_std_6", "type": "double"}, {"name": "Bitcoin Cash_av_std_6", "type":
+    "double"}, {"name": "binance_av_std_6", "type": "double"}, {"name": "cryptocurrency_av_std_6",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_av_std_6", "type": "double"},
+    {"name": "news cryptocurrency_av_std_6", "type": "double"}, {"name": "crypto_av_std_6",
+    "type": "double"}, {"name": "buy bitcoin_av_std_6", "type": "double"}, {"name":
+    "bitcoin stock_av_std_6", "type": "double"}, {"name": "best cryptocurrency_av_std_6",
+    "type": "double"}, {"name": "cryptocurrency market_av_std_6", "type": "double"},
+    {"name": "buy cryptocurrency_av_std_6", "type": "double"}, {"name": "what is cryptocurrency_av_std_6",
+    "type": "double"}, {"name": "cryptocurrency exchange_av_std_6", "type": "double"},
+    {"name": "Close_av_std_7", "type": "double"}, {"name": "bitcoin_av_std_7", "type":
+    "double"}, {"name": "bitcoin price_av_std_7", "type": "double"}, {"name": "bitcoin
+    usd_av_std_7", "type": "double"}, {"name": "bitcoin kurs_av_std_7", "type": "double"},
+    {"name": "Bitcoin.com_av_std_7", "type": "double"}, {"name": "Bitcoin Gold_av_std_7",
+    "type": "double"}, {"name": "BTC-USD_av_std_7", "type": "double"}, {"name": "Bitcoin
+    Cash_av_std_7", "type": "double"}, {"name": "binance_av_std_7", "type": "double"},
+    {"name": "cryptocurrency_av_std_7", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_av_std_7", "type": "double"}, {"name": "news cryptocurrency_av_std_7",
+    "type": "double"}, {"name": "crypto_av_std_7", "type": "double"}, {"name": "buy
+    bitcoin_av_std_7", "type": "double"}, {"name": "bitcoin stock_av_std_7", "type":
+    "double"}, {"name": "best cryptocurrency_av_std_7", "type": "double"}, {"name":
+    "cryptocurrency market_av_std_7", "type": "double"}, {"name": "buy cryptocurrency_av_std_7",
+    "type": "double"}, {"name": "what is cryptocurrency_av_std_7", "type": "double"},
+    {"name": "cryptocurrency exchange_av_std_7", "type": "double"}, {"name": "Close_ewm_mean_2",
+    "type": "double"}, {"name": "bitcoin_ewm_mean_2", "type": "double"}, {"name":
+    "bitcoin price_ewm_mean_2", "type": "double"}, {"name": "bitcoin usd_ewm_mean_2",
+    "type": "double"}, {"name": "bitcoin kurs_ewm_mean_2", "type": "double"}, {"name":
+    "Bitcoin.com_ewm_mean_2", "type": "double"}, {"name": "Bitcoin Gold_ewm_mean_2",
+    "type": "double"}, {"name": "BTC-USD_ewm_mean_2", "type": "double"}, {"name":
+    "Bitcoin Cash_ewm_mean_2", "type": "double"}, {"name": "binance_ewm_mean_2", "type":
+    "double"}, {"name": "cryptocurrency_ewm_mean_2", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_ewm_mean_2", "type": "double"}, {"name": "news cryptocurrency_ewm_mean_2",
+    "type": "double"}, {"name": "crypto_ewm_mean_2", "type": "double"}, {"name": "buy
+    bitcoin_ewm_mean_2", "type": "double"}, {"name": "bitcoin stock_ewm_mean_2", "type":
+    "double"}, {"name": "best cryptocurrency_ewm_mean_2", "type": "double"}, {"name":
+    "cryptocurrency market_ewm_mean_2", "type": "double"}, {"name": "buy cryptocurrency_ewm_mean_2",
+    "type": "double"}, {"name": "what is cryptocurrency_ewm_mean_2", "type": "double"},
+    {"name": "cryptocurrency exchange_ewm_mean_2", "type": "double"}, {"name": "Close_ewm_mean_3",
+    "type": "double"}, {"name": "bitcoin_ewm_mean_3", "type": "double"}, {"name":
+    "bitcoin price_ewm_mean_3", "type": "double"}, {"name": "bitcoin usd_ewm_mean_3",
+    "type": "double"}, {"name": "bitcoin kurs_ewm_mean_3", "type": "double"}, {"name":
+    "Bitcoin.com_ewm_mean_3", "type": "double"}, {"name": "Bitcoin Gold_ewm_mean_3",
+    "type": "double"}, {"name": "BTC-USD_ewm_mean_3", "type": "double"}, {"name":
+    "Bitcoin Cash_ewm_mean_3", "type": "double"}, {"name": "binance_ewm_mean_3", "type":
+    "double"}, {"name": "cryptocurrency_ewm_mean_3", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_ewm_mean_3", "type": "double"}, {"name": "news cryptocurrency_ewm_mean_3",
+    "type": "double"}, {"name": "crypto_ewm_mean_3", "type": "double"}, {"name": "buy
+    bitcoin_ewm_mean_3", "type": "double"}, {"name": "bitcoin stock_ewm_mean_3", "type":
+    "double"}, {"name": "best cryptocurrency_ewm_mean_3", "type": "double"}, {"name":
+    "cryptocurrency market_ewm_mean_3", "type": "double"}, {"name": "buy cryptocurrency_ewm_mean_3",
+    "type": "double"}, {"name": "what is cryptocurrency_ewm_mean_3", "type": "double"},
+    {"name": "cryptocurrency exchange_ewm_mean_3", "type": "double"}, {"name": "Close_ewm_mean_4",
+    "type": "double"}, {"name": "bitcoin_ewm_mean_4", "type": "double"}, {"name":
+    "bitcoin price_ewm_mean_4", "type": "double"}, {"name": "bitcoin usd_ewm_mean_4",
+    "type": "double"}, {"name": "bitcoin kurs_ewm_mean_4", "type": "double"}, {"name":
+    "Bitcoin.com_ewm_mean_4", "type": "double"}, {"name": "Bitcoin Gold_ewm_mean_4",
+    "type": "double"}, {"name": "BTC-USD_ewm_mean_4", "type": "double"}, {"name":
+    "Bitcoin Cash_ewm_mean_4", "type": "double"}, {"name": "binance_ewm_mean_4", "type":
+    "double"}, {"name": "cryptocurrency_ewm_mean_4", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_ewm_mean_4", "type": "double"}, {"name": "news cryptocurrency_ewm_mean_4",
+    "type": "double"}, {"name": "crypto_ewm_mean_4", "type": "double"}, {"name": "buy
+    bitcoin_ewm_mean_4", "type": "double"}, {"name": "bitcoin stock_ewm_mean_4", "type":
+    "double"}, {"name": "best cryptocurrency_ewm_mean_4", "type": "double"}, {"name":
+    "cryptocurrency market_ewm_mean_4", "type": "double"}, {"name": "buy cryptocurrency_ewm_mean_4",
+    "type": "double"}, {"name": "what is cryptocurrency_ewm_mean_4", "type": "double"},
+    {"name": "cryptocurrency exchange_ewm_mean_4", "type": "double"}, {"name": "Close_ewm_mean_5",
+    "type": "double"}, {"name": "bitcoin_ewm_mean_5", "type": "double"}, {"name":
+    "bitcoin price_ewm_mean_5", "type": "double"}, {"name": "bitcoin usd_ewm_mean_5",
+    "type": "double"}, {"name": "bitcoin kurs_ewm_mean_5", "type": "double"}, {"name":
+    "Bitcoin.com_ewm_mean_5", "type": "double"}, {"name": "Bitcoin Gold_ewm_mean_5",
+    "type": "double"}, {"name": "BTC-USD_ewm_mean_5", "type": "double"}, {"name":
+    "Bitcoin Cash_ewm_mean_5", "type": "double"}, {"name": "binance_ewm_mean_5", "type":
+    "double"}, {"name": "cryptocurrency_ewm_mean_5", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_ewm_mean_5", "type": "double"}, {"name": "news cryptocurrency_ewm_mean_5",
+    "type": "double"}, {"name": "crypto_ewm_mean_5", "type": "double"}, {"name": "buy
+    bitcoin_ewm_mean_5", "type": "double"}, {"name": "bitcoin stock_ewm_mean_5", "type":
+    "double"}, {"name": "best cryptocurrency_ewm_mean_5", "type": "double"}, {"name":
+    "cryptocurrency market_ewm_mean_5", "type": "double"}, {"name": "buy cryptocurrency_ewm_mean_5",
+    "type": "double"}, {"name": "what is cryptocurrency_ewm_mean_5", "type": "double"},
+    {"name": "cryptocurrency exchange_ewm_mean_5", "type": "double"}, {"name": "Close_ewm_mean_6",
+    "type": "double"}, {"name": "bitcoin_ewm_mean_6", "type": "double"}, {"name":
+    "bitcoin price_ewm_mean_6", "type": "double"}, {"name": "bitcoin usd_ewm_mean_6",
+    "type": "double"}, {"name": "bitcoin kurs_ewm_mean_6", "type": "double"}, {"name":
+    "Bitcoin.com_ewm_mean_6", "type": "double"}, {"name": "Bitcoin Gold_ewm_mean_6",
+    "type": "double"}, {"name": "BTC-USD_ewm_mean_6", "type": "double"}, {"name":
+    "Bitcoin Cash_ewm_mean_6", "type": "double"}, {"name": "binance_ewm_mean_6", "type":
+    "double"}, {"name": "cryptocurrency_ewm_mean_6", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_ewm_mean_6", "type": "double"}, {"name": "news cryptocurrency_ewm_mean_6",
+    "type": "double"}, {"name": "crypto_ewm_mean_6", "type": "double"}, {"name": "buy
+    bitcoin_ewm_mean_6", "type": "double"}, {"name": "bitcoin stock_ewm_mean_6", "type":
+    "double"}, {"name": "best cryptocurrency_ewm_mean_6", "type": "double"}, {"name":
+    "cryptocurrency market_ewm_mean_6", "type": "double"}, {"name": "buy cryptocurrency_ewm_mean_6",
+    "type": "double"}, {"name": "what is cryptocurrency_ewm_mean_6", "type": "double"},
+    {"name": "cryptocurrency exchange_ewm_mean_6", "type": "double"}, {"name": "Close_ewm_mean_7",
+    "type": "double"}, {"name": "bitcoin_ewm_mean_7", "type": "double"}, {"name":
+    "bitcoin price_ewm_mean_7", "type": "double"}, {"name": "bitcoin usd_ewm_mean_7",
+    "type": "double"}, {"name": "bitcoin kurs_ewm_mean_7", "type": "double"}, {"name":
+    "Bitcoin.com_ewm_mean_7", "type": "double"}, {"name": "Bitcoin Gold_ewm_mean_7",
+    "type": "double"}, {"name": "BTC-USD_ewm_mean_7", "type": "double"}, {"name":
+    "Bitcoin Cash_ewm_mean_7", "type": "double"}, {"name": "binance_ewm_mean_7", "type":
+    "double"}, {"name": "cryptocurrency_ewm_mean_7", "type": "double"}, {"name": "cryptocurrency
+    bitcoin_ewm_mean_7", "type": "double"}, {"name": "news cryptocurrency_ewm_mean_7",
+    "type": "double"}, {"name": "crypto_ewm_mean_7", "type": "double"}, {"name": "buy
+    bitcoin_ewm_mean_7", "type": "double"}, {"name": "bitcoin stock_ewm_mean_7", "type":
+    "double"}, {"name": "best cryptocurrency_ewm_mean_7", "type": "double"}, {"name":
+    "cryptocurrency market_ewm_mean_7", "type": "double"}, {"name": "buy cryptocurrency_ewm_mean_7",
+    "type": "double"}, {"name": "what is cryptocurrency_ewm_mean_7", "type": "double"},
+    {"name": "cryptocurrency exchange_ewm_mean_7", "type": "double"}, {"name": "Close_ewn_std_2",
+    "type": "double"}, {"name": "bitcoin_ewn_std_2", "type": "double"}, {"name": "bitcoin
+    price_ewn_std_2", "type": "double"}, {"name": "bitcoin usd_ewn_std_2", "type":
+    "double"}, {"name": "bitcoin kurs_ewn_std_2", "type": "double"}, {"name": "Bitcoin.com_ewn_std_2",
+    "type": "double"}, {"name": "Bitcoin Gold_ewn_std_2", "type": "double"}, {"name":
+    "BTC-USD_ewn_std_2", "type": "double"}, {"name": "Bitcoin Cash_ewn_std_2", "type":
+    "double"}, {"name": "binance_ewn_std_2", "type": "double"}, {"name": "cryptocurrency_ewn_std_2",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_ewn_std_2", "type": "double"},
+    {"name": "news cryptocurrency_ewn_std_2", "type": "double"}, {"name": "crypto_ewn_std_2",
+    "type": "double"}, {"name": "buy bitcoin_ewn_std_2", "type": "double"}, {"name":
+    "bitcoin stock_ewn_std_2", "type": "double"}, {"name": "best cryptocurrency_ewn_std_2",
+    "type": "double"}, {"name": "cryptocurrency market_ewn_std_2", "type": "double"},
+    {"name": "buy cryptocurrency_ewn_std_2", "type": "double"}, {"name": "what is
+    cryptocurrency_ewn_std_2", "type": "double"}, {"name": "cryptocurrency exchange_ewn_std_2",
+    "type": "double"}, {"name": "Close_ewn_std_3", "type": "double"}, {"name": "bitcoin_ewn_std_3",
+    "type": "double"}, {"name": "bitcoin price_ewn_std_3", "type": "double"}, {"name":
+    "bitcoin usd_ewn_std_3", "type": "double"}, {"name": "bitcoin kurs_ewn_std_3",
+    "type": "double"}, {"name": "Bitcoin.com_ewn_std_3", "type": "double"}, {"name":
+    "Bitcoin Gold_ewn_std_3", "type": "double"}, {"name": "BTC-USD_ewn_std_3", "type":
+    "double"}, {"name": "Bitcoin Cash_ewn_std_3", "type": "double"}, {"name": "binance_ewn_std_3",
+    "type": "double"}, {"name": "cryptocurrency_ewn_std_3", "type": "double"}, {"name":
+    "cryptocurrency bitcoin_ewn_std_3", "type": "double"}, {"name": "news cryptocurrency_ewn_std_3",
+    "type": "double"}, {"name": "crypto_ewn_std_3", "type": "double"}, {"name": "buy
+    bitcoin_ewn_std_3", "type": "double"}, {"name": "bitcoin stock_ewn_std_3", "type":
+    "double"}, {"name": "best cryptocurrency_ewn_std_3", "type": "double"}, {"name":
+    "cryptocurrency market_ewn_std_3", "type": "double"}, {"name": "buy cryptocurrency_ewn_std_3",
+    "type": "double"}, {"name": "what is cryptocurrency_ewn_std_3", "type": "double"},
+    {"name": "cryptocurrency exchange_ewn_std_3", "type": "double"}, {"name": "Close_ewn_std_4",
+    "type": "double"}, {"name": "bitcoin_ewn_std_4", "type": "double"}, {"name": "bitcoin
+    price_ewn_std_4", "type": "double"}, {"name": "bitcoin usd_ewn_std_4", "type":
+    "double"}, {"name": "bitcoin kurs_ewn_std_4", "type": "double"}, {"name": "Bitcoin.com_ewn_std_4",
+    "type": "double"}, {"name": "Bitcoin Gold_ewn_std_4", "type": "double"}, {"name":
+    "BTC-USD_ewn_std_4", "type": "double"}, {"name": "Bitcoin Cash_ewn_std_4", "type":
+    "double"}, {"name": "binance_ewn_std_4", "type": "double"}, {"name": "cryptocurrency_ewn_std_4",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_ewn_std_4", "type": "double"},
+    {"name": "news cryptocurrency_ewn_std_4", "type": "double"}, {"name": "crypto_ewn_std_4",
+    "type": "double"}, {"name": "buy bitcoin_ewn_std_4", "type": "double"}, {"name":
+    "bitcoin stock_ewn_std_4", "type": "double"}, {"name": "best cryptocurrency_ewn_std_4",
+    "type": "double"}, {"name": "cryptocurrency market_ewn_std_4", "type": "double"},
+    {"name": "buy cryptocurrency_ewn_std_4", "type": "double"}, {"name": "what is
+    cryptocurrency_ewn_std_4", "type": "double"}, {"name": "cryptocurrency exchange_ewn_std_4",
+    "type": "double"}, {"name": "Close_ewn_std_5", "type": "double"}, {"name": "bitcoin_ewn_std_5",
+    "type": "double"}, {"name": "bitcoin price_ewn_std_5", "type": "double"}, {"name":
+    "bitcoin usd_ewn_std_5", "type": "double"}, {"name": "bitcoin kurs_ewn_std_5",
+    "type": "double"}, {"name": "Bitcoin.com_ewn_std_5", "type": "double"}, {"name":
+    "Bitcoin Gold_ewn_std_5", "type": "double"}, {"name": "BTC-USD_ewn_std_5", "type":
+    "double"}, {"name": "Bitcoin Cash_ewn_std_5", "type": "double"}, {"name": "binance_ewn_std_5",
+    "type": "double"}, {"name": "cryptocurrency_ewn_std_5", "type": "double"}, {"name":
+    "cryptocurrency bitcoin_ewn_std_5", "type": "double"}, {"name": "news cryptocurrency_ewn_std_5",
+    "type": "double"}, {"name": "crypto_ewn_std_5", "type": "double"}, {"name": "buy
+    bitcoin_ewn_std_5", "type": "double"}, {"name": "bitcoin stock_ewn_std_5", "type":
+    "double"}, {"name": "best cryptocurrency_ewn_std_5", "type": "double"}, {"name":
+    "cryptocurrency market_ewn_std_5", "type": "double"}, {"name": "buy cryptocurrency_ewn_std_5",
+    "type": "double"}, {"name": "what is cryptocurrency_ewn_std_5", "type": "double"},
+    {"name": "cryptocurrency exchange_ewn_std_5", "type": "double"}, {"name": "Close_ewn_std_6",
+    "type": "double"}, {"name": "bitcoin_ewn_std_6", "type": "double"}, {"name": "bitcoin
+    price_ewn_std_6", "type": "double"}, {"name": "bitcoin usd_ewn_std_6", "type":
+    "double"}, {"name": "bitcoin kurs_ewn_std_6", "type": "double"}, {"name": "Bitcoin.com_ewn_std_6",
+    "type": "double"}, {"name": "Bitcoin Gold_ewn_std_6", "type": "double"}, {"name":
+    "BTC-USD_ewn_std_6", "type": "double"}, {"name": "Bitcoin Cash_ewn_std_6", "type":
+    "double"}, {"name": "binance_ewn_std_6", "type": "double"}, {"name": "cryptocurrency_ewn_std_6",
+    "type": "double"}, {"name": "cryptocurrency bitcoin_ewn_std_6", "type": "double"},
+    {"name": "news cryptocurrency_ewn_std_6", "type": "double"}, {"name": "crypto_ewn_std_6",
+    "type": "double"}, {"name": "buy bitcoin_ewn_std_6", "type": "double"}, {"name":
+    "bitcoin stock_ewn_std_6", "type": "double"}, {"name": "best cryptocurrency_ewn_std_6",
+    "type": "double"}, {"name": "cryptocurrency market_ewn_std_6", "type": "double"},
+    {"name": "buy cryptocurrency_ewn_std_6", "type": "double"}, {"name": "what is
+    cryptocurrency_ewn_std_6", "type": "double"}, {"name": "cryptocurrency exchange_ewn_std_6",
+    "type": "double"}, {"name": "Close_ewn_std_7", "type": "double"}, {"name": "bitcoin_ewn_std_7",
+    "type": "double"}, {"name": "bitcoin price_ewn_std_7", "type": "double"}, {"name":
+    "bitcoin usd_ewn_std_7", "type": "double"}, {"name": "bitcoin kurs_ewn_std_7",
+    "type": "double"}, {"name": "Bitcoin.com_ewn_std_7", "type": "double"}, {"name":
+    "Bitcoin Gold_ewn_std_7", "type": "double"}, {"name": "BTC-USD_ewn_std_7", "type":
+    "double"}, {"name": "Bitcoin Cash_ewn_std_7", "type": "double"}, {"name": "binance_ewn_std_7",
+    "type": "double"}, {"name": "cryptocurrency_ewn_std_7", "type": "double"}, {"name":
+    "cryptocurrency bitcoin_ewn_std_7", "type": "double"}, {"name": "news cryptocurrency_ewn_std_7",
+    "type": "double"}, {"name": "crypto_ewn_std_7", "type": "double"}, {"name": "buy
+    bitcoin_ewn_std_7", "type": "double"}, {"name": "bitcoin stock_ewn_std_7", "type":
+    "double"}, {"name": "best cryptocurrency_ewn_std_7", "type": "double"}, {"name":
+    "cryptocurrency market_ewn_std_7", "type": "double"}, {"name": "buy cryptocurrency_ewn_std_7",
+    "type": "double"}, {"name": "what is cryptocurrency_ewn_std_7", "type": "double"},
+    {"name": "cryptocurrency exchange_ewn_std_7", "type": "double"}, {"name": "weak",
+    "type": "double"}, {"name": "month", "type": "double"}, {"name": "year", "type":
+    "double"}, {"name": "weekDay", "type": "double"}, {"name": "Close_dinamic", "type":
+    "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2021-04-17 14:33:22.011859'

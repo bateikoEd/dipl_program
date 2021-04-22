@@ -1,0 +1,15 @@
+artifact_uri: file:///home/eduard/gitRepo/dipl_program/eduard/mlruns/1/60c73d2e4090422a87c035502a3e7547/artifacts
+end_time: 1618581253998
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 60c73d2e4090422a87c035502a3e7547
+run_uuid: 60c73d2e4090422a87c035502a3e7547
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1618581246694
+status: 4
+tags: []
+user_id: eduard

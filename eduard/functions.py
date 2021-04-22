@@ -1,9 +1,4 @@
-from sklearn.metrics import r2_score
-from statsmodels.stats.stattools import durbin_watson
-from sklearn.metrics import explained_variance_score
-import numpy as np
 import scipy.stats
-
 import matplotlib.pyplot as plt
 import warnings
 plt.rcParams['figure.figsize'] = [20,8]

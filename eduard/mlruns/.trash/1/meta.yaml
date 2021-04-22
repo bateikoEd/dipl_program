@@ -1,0 +1,4 @@
+artifact_location: file:///home/eduard/gitRepo/dipl_program/eduard/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: train without shifted Close

@@ -1,0 +1,4 @@
+TranformTimeSeries(box_cox=['Close', 'bitcoin', 'bitcoin price', 'bitcoin usd',
+                            'bitcoin kurs', 'Bitcoin.com', 'Bitcoin Gold',
+                            'BTC-USD', 'Bitcoin Cash', 'binance',
+                          ...

@@ -4,6 +4,7 @@ import pandas as pd
 from scipy.stats import boxcox
 from featuretools.primitives import Week, Year, Weekday, Month
 
+
 class Interpolation(BaseEstimator, TransformerMixin):
     def __init__(self, kind_of_interpolation='linear', astype='float32'):
         self.kind_of_interpolation = kind_of_interpolation
@@ -175,9 +176,6 @@ class RollingStdExponential(BaseEstimator, TransformerMixin):
 
         result = pd.concat([X_copy, transformed], axis=1)
         return result.dropna()
-
-
-from featuretools.primitives import Week, Weekday, Year, Month
 
 
 class DayWeekYear(BaseEstimator, TransformerMixin):
