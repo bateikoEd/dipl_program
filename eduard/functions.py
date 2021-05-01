@@ -53,7 +53,7 @@ def define_metrics(y, predicted_train, predicted_test, name):
     metric_test['ex_var'] = [explained_variance_score(y_test, pred_test_)]
 
     return metric_train.append(metric_test)
-def tsplot(y, lags=None, figsize=(15, 13), style='bmh', title='', path=None):
+def tsplot(y, lags=10, figsize=(15, 13), style='bmh', title='', path=None):
     if not isinstance(y, pd.Series):
         y = pd.Series(y)
 
