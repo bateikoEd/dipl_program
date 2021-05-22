@@ -1,6 +1,7 @@
 #directory 
 models/
 eduard/artifacts
+pasha/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
