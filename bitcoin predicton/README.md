@@ -157,6 +157,47 @@ Metrics using test set.
 
 <img src="images/metrics_180_test_box_cox.png" width="700"/>
 
+## Example for Elastic Net model 
+
+Metrics for model.
+
+<img src="images/elastic_metrics.png" width="400"/>
+
+
+Prediction plot on train and test set.
+
+<img src="images/elastic_pred_plot.png" width="700"/>
+
+
+Featrues importance plot.
+
+<img src="images/elastic_featureimportance.png" width="700"/>
+
+
+Featrues importance values.
+
+<img src="images/elastic_featureimportance_numbers.png" width="400"/>
+
+
+PDF residuals on train(left) and test(right) set.
+
+<img src="images/elastic_pdf_residual.png" width="700"/>
+
+
+Residulas time series for train set.
+
+<img src="images/elastic_res_plot_train.png" width="700"/>
+
+
+Residulas time series for test set.
+
+<img src="images/elastic_res_plot_test.png" width="700"/>
+
+
+Numerical statics for residuals on train and test sets.
+
+<img src="images/elastic_residuals.png" width="400"/>
+
 
 ## Conclusion
 - The most important words are “crypto”, “best cryptocurrency”, “cryptocurrency bitcoin”, “cryptocurrency”. 
